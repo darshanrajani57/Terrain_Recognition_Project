@@ -1,0 +1,57 @@
+body {
+    background-color: antiquewhite;
+}
+
+.content-container, .progress, .progress-bar {
+    width: 500px;
+    height: auto;
+    background-color: rgb(244, 242, 242);
+}
+
+.content-container {
+    padding: 10px 20px 20px 20px;
+    margin: 10% auto;
+    border-radius: 20px;
+    border: 1px solid black;
+}
+
+#selectedImage {
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: scroll;
+}
+
+.progress-bar {
+    width: 30%;
+    height: 11px;
+    background-color: #ccc;
+    border-radius: 10px;
+    transition: width 2s ease-in-out;
+}
+
+.progress {
+    width: 10%;
+    height: 11px;
+    background-color: #4CAF50;
+    text-align: center;
+    border-radius: 10px;
+    transition: width 2s ease-in-out;
+}
+
+footer {
+    background-color: antiquewhite;
+    color: #333;
+    text-align: center;
+    padding: 10px;
+}
+
+#footer-messages {
+    animation: fade 2s infinite;
+}
+
+@keyframes fade {
+    0%, 100% {
+        opacity: 1;
+    }
+}

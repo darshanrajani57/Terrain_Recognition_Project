@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Terrain Recognition</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body> 
+
+    <div class="content-container">
+        <h1>Terrain Recognition</h1>
+        <form action="/predict" method="POST" enctype="multipart/form-data">
+            <input type="file" name="file" accept="image/*" id="imageInput" required>
+            <input type="submit" value="Predict">
+            <br>
+            <img id="selectedImage" src="" alt="Selected Image" class="hidden">
+        </form>
+            <p>Predicted Class: <span id="predictedClass"></span></p>
+            <p>Percentage Grassy: <span id="percentageGrassy"></span>%</p>
+            <div class="progress-bar">
+                <div class="progress" id="progressGrassy"></div>
+            </div>
+            <p>Percentage Marshy: <span id="percentageMarshy"></span>%</p>
+            <div class="progress-bar">
+                <div class="progress" id="progressMarshy"></div>
+            </div>
+            <p>Percentage Rocky: <span id="percentageRocky"></span>%</p>
+            <div class="progress-bar">
+                <div class="progress" id="progressRocky"></div>
+            </div>
+            <p>Percentage Sandy: <span id="percentageSandy"></span>%</p>
+            <div class="progress-bar">
+                <div class="progress" id="progressSandy"></div>
+            </div>
+    </div>
+
+    <footer>
+        <div id="footer-messages">
+        </div>
+    </footer>
+    
+    <script src="../script.js"></script>
+</body>
+</html>
